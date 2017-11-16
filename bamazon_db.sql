@@ -12,16 +12,29 @@ CREATE TABLE products (
 );
 
 
-INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES
-("Fujifilm Instax Mini 9", "Camera & Photo", 59.66, 3),
-("Polaroid 2x3 inch Premium Photo Paper", "Camera & Photo", 23.38, 22),
-("Small Compact Lightweight Binoculars", "Camera & Photo", 22.99, 104),
-("Monocular Telescope, 16X52 Dual Focus", "Camera & Photo", 18.98, 67),
-("Celestron 21035 70mm Travel Scope", "Camera & Photo", 59.99, 200),
-("Nikon AF-S DX NIKKOR 35mm f/1.8G Lens", "Camera & Photo", 166.95, 4),
-("Microsoft Surface Dock", "Computers & Accessories", 125.99, 20),
-("Apple iPad with WiFi, 32GB, Space Grey", "Computers & Accessories", 329.99, 0),
-("AmazonBasics Adjustable Tablet Stand", "Computers & Accessories", 8.99, 8);
+insert into products(product_name, department_name, price, stock_quantity)
+values ("Hevay Duty Batteries", "Truck parts", 125, 25);
+
+insert into products(product_name, department_name, price, stock_quantity)
+values ("Tires", "Truck parts", 59.99, 90);
+
+insert into products(product_name, department_name, price, stock_quantity)
+values ("Clutch kits", "Truck parts", 6.99, 13);
+
+insert into products(product_name, department_name, price, stock_quantity)
+values ("Radiators", "Truck parts", 32.99, 2);
+
+insert into products(product_name, department_name, price, stock_quantity)
+values ("EGR System Components", "Truck parts", 10.56, 8);
+
+insert into products(product_name, department_name, price, stock_quantity)
+values ("LED Flashlight", "Sporting and Outdoors", 18.00, 250);
+
+insert into products(product_name, department_name, price, stock_quantity)
+values ("Knee Brace Support", "Sporting and Outdoors", 17.49, 900);
+
+insert into products(product_name, department_name, price, stock_quantity)
+values ("Water Bottle", "Sporting and Outdoors", 7.99, 221);
 
 
 CREATE TABLE departments (
@@ -31,5 +44,5 @@ CREATE TABLE departments (
 );
 
 INSERT INTO departments (department_name, over_head_costs) VALUES
-("Camera & Photo", 3000),
-("Computers & Accessories", 4500);
+("Truck parts", 3000),
+("Sporting and Outdoors", 4500);

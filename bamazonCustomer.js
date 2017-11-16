@@ -36,7 +36,7 @@ var ques = [
 function runProg(query) {
     var table = new cliTable({
         head: ["Product ID","Product Name","Price"],
-        colWidths: [30, 80, 30],
+        colWidths: [10, 30, 30],
     });
     connection.query(
             "SELECT item_id, " +
